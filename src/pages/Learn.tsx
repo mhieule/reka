@@ -1,6 +1,7 @@
 // Filename - pages/Learn.tsx
 
 import React from "react";
+import LessonCards from "../components/learn/LessonCards";
 
 const Learn = () => {
   return (
@@ -9,6 +10,7 @@ const Learn = () => {
         RekAI is THE interactive language learning portal. Sit back, relax and
         enjoy !
       </h1>
+      <LessonCards />
     </div>
   );
 };

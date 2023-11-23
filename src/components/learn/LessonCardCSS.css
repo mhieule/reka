@@ -1,0 +1,55 @@
+.lesson-cards {
+    background-image: url('main-background.jpg');
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Add this line */
+    /* other styles */
+    background-color: #fff;
+    height: auto;
+    width: 23%;
+    border: 1px solid #82841c;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    perspective: 1000px;
+  }
+  
+.card-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+.card-text h1 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+.card-text p {
+    margin-top: 8px;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #000203;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+  }

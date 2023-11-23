@@ -1,10 +1,5 @@
 // Filename - pages/index.js
 
-import React from "react";
-import ListGroup from "../components/deprecated/ListGroup";
-import Alert from "../components/deprecated/Alert";
-import Button from "../components/deprecated/Button";
-
 const Home = () => {
   const items = [
     "An item",
