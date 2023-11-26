@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Nav, NavLink, NavMenu } from "./NavbarElements";
-import Logo from "./Logo";
+import usericon from "../../assets/user-icon.png";
 
 const Navbar = () => {
   return (
@@ -16,7 +16,7 @@ const Navbar = () => {
             <NavLink to="/setting">Setting</NavLink>
             <NavLink to="/competition">Live Competitions</NavLink>
             <NavLink to="/sign-up">
-              <img src="src/assets/user-icon.png" alt="user"></img>
+              <img src={usericon} alt="user"></img>
             </NavLink>
           </NavMenu>
         </Nav>

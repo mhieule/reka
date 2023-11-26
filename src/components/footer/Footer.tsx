@@ -1,5 +1,7 @@
 import "./Footer.css";
-
+import facebook from "../../assets/facebook.png";
+import linkedin from "../../assets/linkedin.png";
+import twitter from "../../assets/twitter.png";
 const Footer = () => {
   return (
     <>
@@ -28,13 +30,13 @@ const Footer = () => {
             <ul className="social-icons">
               <li>
                 <a href="#" target="_blank">
-                  <img src="src/assets/facebook.png" alt="Facebook" />
+                  <img src={facebook} alt="Facebook" />
                 </a>
                 <a href="#" target="_blank">
-                  <img src="src/assets/linkedin.png" alt="Twitter" />
+                  <img src={linkedin} alt="LinkedIn" />
                 </a>
                 <a href="#" target="_blank">
-                  <img src="src/assets/twitter.png" alt="Instagram" />
+                  <img src={twitter} alt="Twitter" />
                 </a>
               </li>
             </ul>

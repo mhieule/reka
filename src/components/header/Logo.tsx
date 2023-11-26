@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo.png";
 
 const Logo = () => {
   return (
@@ -10,7 +11,8 @@ const Logo = () => {
       }}
     >
       <img
-        src="src/assets/logo.png"
+        //src="src/assets/logo.png"
+        src={logo}
         alt="Website Logo"
         style={{ width: "125px", height: "125px" }}
       />

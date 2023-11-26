@@ -1,4 +1,5 @@
 // Filename - pages/index.js
+import stonk from "../assets/stonk.gif";
 
 const Home = () => {
   const items = [
@@ -28,7 +29,7 @@ const Home = () => {
         <h1>
           Welcome to RekAI. The language learning platform that makes sense.
         </h1>
-        <img src="src/assets/stonk.gif" width="80%" height="80%"></img>
+        <img src={stonk} width="80%" height="80%"></img>
       </div>
       {/*
       <div>

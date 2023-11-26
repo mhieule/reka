@@ -1,24 +1,28 @@
 import React from "react";
 import LessonCard from "./LessonCard";
 import "./LessonCardCSS.css";
+import castle from "../../assets/castle.jpg";
+import books from "../../assets/books.jpg";
+import social from "../../assets/social.jpg";
+import augmented from "../../assets/augmented.jpg";
 
 const lessonType1 = {
-  src: "src/assets/castle.jpg",
+  src: castle,
   title: "Learn basic phrases",
   context: "Grammar, Vocabulary",
 };
 const lessonType2 = {
-  src: "src/assets/books.jpg",
+  src: books,
   title: "Learn from topics",
   context: "Sport, Food, Travel",
 };
 const lessonType3 = {
-  src: "src/assets/social.jpg",
+  src: social,
   title: "Learn from social media",
   context: "Tweet/Tiktok/Instagram",
 };
 const lessonType4 = {
-  src: "src/assets/augmented.jpg",
+  src: augmented,
   title: "Augmented Learning",
   context: "Coming soon",
 };
