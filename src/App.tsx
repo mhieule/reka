@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/index";
 import Learn from "./pages/Learn";
 import Setting from "./pages/Setting";
