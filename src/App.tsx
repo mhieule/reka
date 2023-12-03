@@ -6,6 +6,7 @@ import "./App.css";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/index";
 import Learn from "./pages/Learn";
+import LearnTopic from "./pages/LearnTopic";
 import Setting from "./pages/Setting";
 import SignUp from "./pages/signup";
 import Practice from "./pages/Practice";
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/learn" element={<Learn />} />
+          <Route path="/learn/topic" element={<LearnTopic />} />
           <Route path="/practice" element={<Practice />} />
           <Route path="/setting" element={<Setting />} />
           <Route path="/competition" element={<Competition />} />

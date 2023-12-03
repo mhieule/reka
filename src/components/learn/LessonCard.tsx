@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
   src: string;
   title: string;
   context: string;
+  buttonLink: string;
 }
 
-const LessonCard = ({ src, title, context }: Props) => {
+const LessonCard = ({ src, title, context, buttonLink }: Props) => {
   return (
     <>
       <div className="card-container">
@@ -17,7 +19,9 @@ const LessonCard = ({ src, title, context }: Props) => {
           <h1>{title}</h1>
           <p>{context}</p>
         </div>
-        <button>Start</button>
+        <Link to={buttonLink}>
+          <button>Start</button>
+        </Link>
       </div>
     </>
   );
