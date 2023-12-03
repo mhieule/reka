@@ -16,7 +16,7 @@ const Logo = () => {
         alt="Website Logo"
         style={{ width: "125px", height: "125px" }}
       />
-      <h1 style={{ display: "inline-block" }}>Eure.AI</h1>
+      <h1 style={{ display: "inline-block" }}>RekAI</h1>
     </div>
   );
 };
