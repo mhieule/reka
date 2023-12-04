@@ -2,6 +2,7 @@ import React from "react";
 import LessonCards from "../components/learn/LessonCards";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import { useState } from "react";
 
 const LearnTopic = () => {
   return (
@@ -45,21 +46,7 @@ const LearnTopic = () => {
       <br></br>
       <br></br>
       <button>Generate lesson</button>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <div style={{ margin: "300px" }}></div>
     </>
   );
 };
