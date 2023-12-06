@@ -25,18 +25,7 @@ a:hover {
   color: #000000;
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-} 
-/*
-Missing from body:
-place-items: center;
-display: flex;
-background-image: url("src/assets/stonk.gif");
-background-size: cover;
-*/
+
 
 h1 {
   font-size: 3.2em;
