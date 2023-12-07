@@ -1,5 +1,10 @@
 /*PROLLY DONT NEED ANYMORE*/
 
+body {
+  background-color:whitesmoke;
+  position: relative;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,8 +29,6 @@ a {
 a:hover {
   color: #000000;
 }
-
-
 
 h1 {
   font-size: 3.2em;

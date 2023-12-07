@@ -1,5 +1,4 @@
 .lesson-cards {
-    background-image: url('main-background.jpg');
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

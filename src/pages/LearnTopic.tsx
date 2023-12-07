@@ -6,13 +6,17 @@ import { useState } from "react";
 import { OpenAI } from "langchain/llms/openai";
 import { PromptTemplate } from "langchain/prompts";
 import { LLMChain } from "langchain/chains";
+import { StringOutputParser } from "langchain/schema/output_parser";
 
 const model = new OpenAI({
-  openAIApiKey: "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",
+  openAIApiKey: "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",
+  maxTokens: 256,
 });
 
+const parser = new StringOutputParser();
+
 const prompt = PromptTemplate.fromTemplate(
-  "What is a good name for a company that makes {product}?"
+  "Write a English learning text of topic {topic}? Construct the text so that it can be used as a English learning reading text with proper format."
 );
 
 const chainA = new LLMChain({ llm: model, prompt });
@@ -25,11 +29,12 @@ const LearnTopic = () => {
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTextInput(event.target.value);
+    setTextOutput("");
   };
   return (
     <>
       <div>
-        <h1></h1>
+        <h1>Topics</h1>
         <h3>
           Begin by describing in natural language what has been on your mind or
           what topic you want to deepen your language skill in. Based on your
@@ -70,14 +75,29 @@ const LearnTopic = () => {
       <br></br>
       <button
         onClick={() => {
-          const resA = chainA.call({ product: "colorful socks" });
-
-          console.log({ resA });
+          setTextOutput("");
+          chainA.run(textInput).then((response) => {
+            setTextOutput(response);
+          });
         }}
       >
         Generate lesson
       </button>
-      <div style={{ margin: "300px" }}></div>
+      <div style={{ margin: "100px" }}></div>
+      <div
+        style={{
+          whiteSpace: "pre-line",
+          textAlign: "left",
+          border: "1px solid #000",
+          padding: "10px",
+          backgroundColor: "black",
+          borderRadius: "25px",
+          color: "white",
+        }}
+        id="lesson-text"
+      >
+        {textOutput}
+      </div>
     </>
   );
 };
